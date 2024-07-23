@@ -1,0 +1,19 @@
+@import "_colors";
+@import "variables";
+@import "_reset";
+@import "_functions";
+
+@each $key, $value in $color {
+  @for $i from 1 through 9 {
+    .text-#{$key}-#{$i}00 {
+      color: darken($value, $i * 2%);
+    }
+  }
+}
+@each $key, $value in $back-ground {
+    @for $i from 1 through 9 {
+      .bg-#{$key}-#{$i}00 {
+        color: darken($value, $i * 10%);
+      }
+    }
+  }

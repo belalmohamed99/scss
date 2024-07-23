@@ -1,0 +1,6 @@
+@function size($size){
+    @return $size / 16px * 2rem;
+}
+h1{
+    font-size: size(30px);
+}

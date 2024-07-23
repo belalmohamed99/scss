@@ -1,0 +1,17 @@
+$color :(
+    first :#cc0000,
+    second :#000066,
+    third : #009900,
+    fourth :#660066,
+);
+$back-ground:(
+    first :#ffffff,
+    second:#666633,
+    third :#000,
+);
+h1{
+    color: map-get($color, first);
+};
+body{
+    background-color: map-get($back-ground, third);
+};
